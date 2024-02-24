@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/borrower")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200/")
 public class BorrowerController{
 
     final BorrowerService service;
